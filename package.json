@@ -1,0 +1,17 @@
+{
+  "name": "MeowLoadJS",
+  "version": "v0.0.0",
+  "description": "Asynchronously loading CSS and Javascript files faster",
+  "license": "MIT License",
+  "repository": "ashumeow/MeowLoadJS",
+  "author": {
+    "name": "Aswini S",
+    "github": "ashumeow",
+    "twitter": "@ashumeow",
+    "email": "ashumeow@live.com",
+    "url": "http://windowsgeekpro.in"
+  },
+  "files": [
+    ".js"
+  ]
+}
