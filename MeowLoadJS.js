@@ -1,8 +1,9 @@
 function MeowLoadJS() {
 	// Main file
+	///////////// Async ////////////////////////
 	'use strict';
 
-	// MeowJS CSS Loader
+	// MeowJS CSS file Loader
 	function meowLoaderCSS() {
 	var xx = window.document.createElement("link");
 	var ref = before || window.document.getElementsByTagName("script")[0];
@@ -28,8 +29,21 @@ function MeowLoadJS() {
 	toggleMedia();
 	return xx;
 	}
+	// End of MeowJS CSS loader
 
-	//
-	// Still more to code!
-	//
+	// MeowJS JS file Loader
+	function meowLoaderJS(src, cb) {
+		// src => source
+		// cb => callback
+		var ref = window.document.getElementsByTagName("script")[0];
+		var script = window.document.createElement("script");
+		script.src = src;
+		script.async = true;
+		ref.parentNode.insertBefore(script, ref);
+		if(cb && typeof(cb) === "function") {
+			script.onLoad = cb;
+		}
+		return script;
+	}
+	// End of MeowJS JS loader
 }
