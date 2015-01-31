@@ -1,6 +1,6 @@
 {
   "name": "MeowLoadJS",
-  "version": "v0.0.0",
+  "version": "v0.0.1",
   "description": "Asynchronously loading CSS and Javascript files faster",
   "license": "MIT License",
   "repository": "ashumeow/MeowLoadJS",
